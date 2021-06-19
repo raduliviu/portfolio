@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+img {
+   max-width: 150px;
+   border-radius: 30%;
+}
+
+.logo {
+    font-family: 'Oswald', sans-serif;
+    
+    line-height: 2em;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+.logo a {
+    text-decoration: none;
+    color: rgba(7, 255, 243, 0.788);
+}
+
+header {
+    background-color: azure;
+}
+
+.header-nav {
+    min-height: 50px;
+    background-color: rosybrown;
+}
+
+.header-img {
+    text-align: center;
+}
+
+.header-nav ul {
+    list-style-type: none;
+    display: flex;
+}

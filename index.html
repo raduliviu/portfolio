@@ -10,49 +10,99 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
+<!---
+TODO:
+    - Add ROW as not immediate child of Container, for ex:
+
+    div.container
+        header
+            section.row
+            section.row
+-->
 
 <body>
     <div class="container">
-        <header>
-            <div class="logo">RB</div>
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
-            <section>
-                <figure></figure>
+        <header class="row">
+            <section class="col-12 header-nav">
+                <div class="row">
+                    <div class="logo col-2">
+                        <a href="index.html">RB</a>
+                    </div>
+                    <nav class="col-10">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Projects</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+            <section class="col-12 header-img">
+                <div class="row">
+                    <h1 class="col-12">Radu Baltag</h1>
+                    <figure class="col-12">
+                        <img src="assets/me.jpg" alt="Picture of the author">
+                    </figure>
+                </div>
             </section>
         </header>
-        <main>
-            <section>
-                <h3>Hi!</h3>
-                <p>Quick info about me
 
-                    Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent
-                    delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum
-                    an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat
-                    falli consulatu at vis. Te facilisis mnesarchum qui posse omnium mediocritatem est cu. Modus
-                    argumentum ne qui tation efficiendi in eos. Ei mea falli legere efficiantur et tollit aliquip
-                    debitis mei. No deserunt mediocritatem mel. Lorem ipsum dolor sit amet et delectus accommodare his
-                    consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an
-                    brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius
-                    cu. Sit munere facilis accusam eu dicat falli consulatu at vis. Te facilisis mnesarchum qui posse
-                    omnium mediocritatem est cu. Modus argumentum ne qui tation efficiendi in eos. Ei mea falli legere
-                    efficiantur et tollit aliquip debitis mei. No deserunt mediocritatem mel. Lorem ipsum dolor sit amet
-                    et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit
-                    dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei
-                    iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat falli consulatu at vis. Te
-                    facilisis mnesarchum qui posse omnium mediocritatem est cu. Modus argumentum ne qui tation
-                    efficiendi</p>
+        <main class="row">
+            <section class="col-12 about">
+                <div class="row">
+                    <h3 class="col-12">Hi!</h3>
+                    <p class="col-12">Quick info about me
+
+                        Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent
+                        delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant
+                        dolorum
+                        an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat
+                        falli consulatu at vis. Te facilisis mnesarchum qui posse omnium mediocritatem est cu. Modus
+                        argumentum ne qui tation efficiendi in eos. Ei mea falli legere efficiantur et tollit aliquip
+                        debitis mei. No deserunt mediocritatem mel. Lorem ipsum dolor sit amet et delectus accommodare
+                        his
+                        consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an
+                        brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum
+                        moderatius
+                        cu. Sit munere facilis accusam eu dicat falli consulatu at vis. Te facilisis mnesarchum qui
+                        posse
+                        omnium mediocritatem est cu. Modus argumentum ne qui tation efficiendi in eos. Ei mea falli
+                        legere
+                        efficiantur et tollit aliquip debitis mei. No deserunt mediocritatem mel. Lorem ipsum dolor sit
+                        amet
+                        et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu.
+                        Vidit
+                        dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut.
+                        Mei
+                        iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat falli consulatu at vis. Te
+                        facilisis mnesarchum qui posse omnium mediocritatem est cu. Modus argumentum ne qui tation
+                        efficiendi</p>
+                </div>
             </section>
-            <section></section>
+
+            <section class="col-12 call-me">
+                <div class="row">
+                    <div class="col">
+                        <p>If I've managed to capture your interest, reach out and let's see how we can collaborate!</p>
+                    </div>
+                    <div class="col">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </section>
+
         </main>
-        <footer>
-            © Radu Baltag
+
+        <footer class="row">
+
+            <p class="col">© Radu Baltag</p>
+
         </footer>
     </div>
 
