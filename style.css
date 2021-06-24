@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    
+    font-family: 'Ubuntu', sans-serif;
 }
 
 img {
@@ -11,9 +11,7 @@ img {
 
 .logo {
     font-family: 'Oswald', sans-serif;
-    
-    line-height: 2em;
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 600;
     text-align: center;
     
@@ -24,13 +22,22 @@ img {
     color: rgba(7, 255, 243, 0.788);
 }
 
+.logo a:hover {
+    color: #01201E;
+}
+
 header {
     background-color: azure;
 }
 
 .header-nav {
+    width: 100%;
     min-height: 50px;
     background-color: rosybrown;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
 }
 
 .header-img {
@@ -40,4 +47,25 @@ header {
 .header-nav ul {
     list-style-type: none;
     display: flex;
+    padding-left: 0;
+    margin-right: 2rem;
+}
+
+.nav-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 30px;
+    font-weight: 700;
+    color: #1E2020;
+    font-size: 1.2rem;
+}
+
+.nav-button:hover {
+    background-color: azure;
+}
+
+.about {
+    margin: 2rem auto;
+    width: 80%;
+    font-size: 2rem;
 }
