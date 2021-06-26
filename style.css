@@ -40,15 +40,21 @@ header {
     align-items: center;
 }
 
+.header-nav nav {
+    margin-right: 3rem;
+}
+
 .header-img {
     text-align: center;
+    background-image: url(./assets/matrix.jpg);
+    background-size: cover;
+    min-height: 20rem;
 }
 
 .header-nav ul {
     list-style-type: none;
     display: flex;
     padding-left: 0;
-    margin-right: 2rem;
 }
 
 .nav-button {
